@@ -24,7 +24,7 @@
 
 # Setup & Run Instructions
 
-1.  git clone https://github.com/jatinsikarwar7580/ todoApp.git;
+1.  git clone https://github.com/jatinsikarwar7580/todoApp.git;
 
 2.  cd todoApp
 
