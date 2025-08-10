@@ -1,14 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-
-const TaskCard = ({ task, onEdit, onDelete, onComplete, isOverdue }) => {
+import Icon from 'react-native-vector-icons/MaterialIcons'; 
+const TaskCard = ({ task, onEdit, onDelete, isOverdue }) => {
   const colors = isOverdue
-    ? ['#ff9a9e', '#ff6a6a']
-    : getGradientColors(task.priority);
-
-  const isCompleted = task.status === 'Completed';
+    ? ['#ff9a9e', '#ff6a6a'] 
+    : getGradientColors(task.priority); 
 
   return (
     <LinearGradient colors={colors} style={styles.card}>
@@ -28,12 +25,6 @@ const TaskCard = ({ task, onEdit, onDelete, onComplete, isOverdue }) => {
         </View>
 
         <View style={styles.buttonContainer}>
-          {!isCompleted && (
-            <TouchableOpacity onPress={onComplete} style={styles.completeButton}>
-              <Icon name="check-circle" size={20} color="#fff" />
-              <Text style={styles.completeButtonText}>Complete</Text>
-            </TouchableOpacity>
-          )}
           <TouchableOpacity onPress={onEdit} style={styles.button}>
             <Icon name="edit" size={20} color="#fff" />
           </TouchableOpacity>
@@ -71,7 +62,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   detailsContainer: {
-    flex: 1,
+    flex: 1, // Ensures details take up available space
   },
   title: {
     fontSize: 18,
@@ -92,19 +83,6 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 5,
     backgroundColor: 'rgba(255,255,255,0.2)',
-  },
-  completeButton: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#28a745',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 5,
-  },
-  completeButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    marginLeft: 6,
   },
 });
 
