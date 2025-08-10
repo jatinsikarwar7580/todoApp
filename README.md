@@ -24,7 +24,7 @@
 
 # Setup & Run Instructions
 
-1.  git clone https://github.com/jatinsikarwar7580/ todoApp.git;
+1.  git clone https://github.com/jatinsikarwar7580/todoApp.git;
 
 2.  cd todoApp
 
@@ -42,7 +42,5 @@
 2. npm run ios
 
   
-# Known issues :  
-1. Task notifications/reminders not yet     implemented.
-
-2. UI styling may need adjustments on different screen sizes.
+  
+  
