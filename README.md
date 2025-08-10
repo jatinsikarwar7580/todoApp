@@ -42,5 +42,11 @@
 2. npm run ios
 
   
+<<<<<<< HEAD
+# Known issues :  
+1. Task notifications/reminders not yet     implemented.
+
+2. UI styling may need adjustments on different screen sizes.
+=======
   
-  
+>>>>>>> 5c3ae6d878cc3d64c8a21ffab74caeab26901fc6
